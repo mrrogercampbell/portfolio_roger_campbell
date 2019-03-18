@@ -1,0 +1,12 @@
+.project-list{
+    border: orange solid 5px;
+    max-width: auto;
+}
+
+ul{
+    display: block;
+}
+
+.project-name:hover, .project-name:active{
+    font-size: 150%
+}

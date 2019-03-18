@@ -1,0 +1,9 @@
+.footer-div{
+    border: grey solid 10px;
+    margin: 10px 0;
+    display: flex;
+}
+
+p{
+    margin: 10px;
+}
