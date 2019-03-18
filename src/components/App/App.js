@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
-import NavBar from '../NavBar/NavBar'
 import BrandStament from '../BrandStatment/BrandStatment'
 // import ProjectList from '../ProjectList/ProjectList'
 import ProjectGallery from '../../components/ProjectGallery/ProjectGallery'
+import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
+import '../NavBar/NavBar.css'
 
 class App extends Component {
   render() {
@@ -22,7 +23,7 @@ class App extends Component {
               </li>
 
               <li>
-                <Link to="">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -36,11 +37,9 @@ class App extends Component {
             <Route exact path='/projectgallery' render={routerProps => <ProjectGallery {...routerProps} />}
             />
 
-            {/* <Route>
-              <ProjectGallery />
+            <Route exact path='/contact' render={routerProps => <Contact {...routerProps} />}
+            />
 
-            </Route> */}
-            {/* <ProjectList /> */}
           </Switch>
         </main>
 

@@ -1,0 +1,11 @@
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+}
+.logos img {
+    margin: 10px;
+    max-width: 23vw;
+}
