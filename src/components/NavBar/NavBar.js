@@ -5,16 +5,16 @@ import './NavBar.css'
 class NavBar extends Component {
     render() {
         return (
-            <div className='navigation-bar'>
+            <nav className='navigation-bar'>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to=""></Link>
+                        <Link to="">Profolio Gallery</Link>
                     </li>
                 </ul>
-            </div>
+            </nav>
         );
     }
 }

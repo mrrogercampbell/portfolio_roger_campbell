@@ -10,3 +10,8 @@ ul{
 .project-name:hover, .project-name:active{
     font-size: 150%
 }
+
+.project-img {
+    max-width: 50%;
+    max-height: 100%;
+}
