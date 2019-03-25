@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import BrandStament from '../BrandStatment/BrandStatment'
 // import ProjectList from '../ProjectList/ProjectList'
 import ProjectGallery from '../../components/ProjectGallery/ProjectGallery'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import '../NavBar/NavBar.css'
+import Home from '../Home/Home'
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
           <nav className='navigation-bar'>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="#home">Home</Link>
               </li>
 
               <li>
@@ -30,17 +31,10 @@ class App extends Component {
         </header>
 
         <main>
-          <Switch>
-
-            <Route exact path='/' render={routerProps => <BrandStament {...routerProps} />} />
-
-            <Route exact path='/projectgallery' render={routerProps => <ProjectGallery {...routerProps} />}
-            />
-
-            <Route exact path='/contact' render={routerProps => <Contact {...routerProps} />}
-            />
-
-          </Switch>
+          <Home />
+          <BrandStament id='home' />
+          <ProjectGallery />
+          <Contact />
         </main>
 
         <footer>

@@ -21,6 +21,7 @@ class ProjectGallery extends Component {
                             <img src={project1} />
                             <p><span className='title'>Project Title: Battlestar Galactica Trivia</span></p>
                             <p> This is my project..... Give details.</p>
+                            <p>GitHub link</p>
                         </a>
                     </div>
                     <div>
